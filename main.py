@@ -24,6 +24,7 @@ def get_repo_contents(repo_url, token=None):
 
 # Function to download content of a specific file
 def get_file_content(file_url):
+    print("file_url ":file_url)
     response = requests.get(file_url)
     if response.status_code == 200:
         return response.text
